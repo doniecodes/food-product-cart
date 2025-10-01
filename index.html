@@ -2,73 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style.css">
   
   <title>Frontend Mentor | Product list with cart</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Desserts
+  <main class="container">
+    <!-- PRODUCTS CONTAINER. -->
+    <section class="products-container">
+      <h1 class="heading-1">Desserts</h1>
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+      <div class="products">
+        <!-- Products go here. -->
+      </div>
+    </section>
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
+    <!-- CART CONTAINER. -->
+    <div class="cart-container">
+    
+      <div class="heading-2">
+        Your Cart <span class="cart-amount">(0)</span>
+      </div>
+      <!-- Empty Cart -->
+      <div class="empty-cart">
+        <img src="./assets/images/illustration-empty-cart.svg" alt="">
+        <p>Your added items will appear here</p>
+      </div>
+      <!-- Cart Filled -->
+       <div class="filled-cart">
+        <div class="cart-items-wrapper">
+          <!-- CART PRODUCTS GO HERE -->
+        </div>
+        <!-- TOTALS WRAPPER -->
+        <div class="cart-totals-wrapper">
+          <div class="grand-total-div">
+            <span>Order Total</span>
+            <strong class="grand-total">0</strong>
+          </div>
+          <div class="carbon-neutral-div">
+            <img src="assets/images/icon-carbon-neutral.svg" alt="">
+            This is a <strong>carbon neutral</strong> delivery
+          </div>
+          <button class="confirm-order-btn">
+            Confirm Order
+          </button>
+        </div>
+      </div>
 
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
+    </div>
 
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
 
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
 
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
+    <!-- CONFIRMED ORDER. -->
+    <section class="confirmed-section">
+      <img src="./assets/images/icon-order-confirmed.svg" alt="" class="confirmed-icon">
+      <h2 class="heading-3">Order Confirmed</h2>
+      <p>We hope you enjoy your food!</p>
 
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
+      <div class="confirmed-items-container">
 
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
+        <div class="confirmed-items">   
+          <!-- CONFIRMED ITEMS GO HERE -->
+        </div>
 
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
+        <div class="confirmed-order-totals">
+          <span>Order Total</span>
+            <strong class="confirmed-grand-total"></strong>
+        </div>
 
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
+      </div>
 
+      <button class="new-order-btn">
+         Start New Order
+      </button>
+
+    </section>
+
+  </main>
+  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://doniecode-portfolio.netlify.app/" target="_blank">@doniecode</a>.
   </div>
+
+
+  <script src="./src/script.js"></script>
 </body>
 </html>
