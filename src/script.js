@@ -264,6 +264,7 @@ let startNewOrder = ()=> {
         calculateTotalCount();
         renderProducts();
         confirmedSection.classList.remove("show");
-        localStorage.setItem("CART", JSON.stringify(basket));
+        confirmedItems.innerHTML = "";
+        localStorage.removeItem("CART");
     })
 }
