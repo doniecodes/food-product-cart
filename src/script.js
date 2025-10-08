@@ -28,7 +28,6 @@ const fetchData = async ()=> {
 };
 fetchData();
 
-
 // Render products
 let renderProducts = async ()=> {
     let data = await fetchData();

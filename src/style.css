@@ -116,6 +116,22 @@ body {
     font-size: 0.7rem;
     margin: 0 2rem;
 }
+
+
+.increment-btn, .decrement-btn {
+    border: 1.5px solid #fff;
+    border-radius: 100%;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.decrement-btn {
+    display: block;
+    padding: 2rem;
+    width: 10px;
+    height: 10px;
+}
+
 .increment-btn, .decrement-btn {
     border: 1.5px solid #fff;
     border-radius: 100%;
