@@ -10,7 +10,5 @@
 ### Built with
 - HTMML & CSS
 - Vanilla Javascript
-- 
 ### What I learned
-
 - i learned how to to get products from a json file using fetch.
